@@ -15,6 +15,13 @@ $(document).ready(function () {
         $("#do-while-num").text(num - 1);
         $("#for-num").text(num);
 
+        var whileloopIteration = 0;
+
+        while (whileloopIteration < num + 1 ){
+
+            addImageToDiv("#while-loop");
+            whileloopIteration++;
+        }
 
         /*
          Create a while loop that runs "num + 1" times.
@@ -23,8 +30,13 @@ $(document).ready(function () {
          addImageToDiv("#while-loop");
         */
 
+        var whileDoloopIteration = 0;
 
-
+        do {
+            addImageToDiv("#do-while-loop");
+            whileDoloopIteration++;
+        }
+        while (whileDoloopIteration < num - 1 );
 
 
         /*
@@ -34,7 +46,13 @@ $(document).ready(function () {
          addImageToDiv("#do-while-loop");
         */
 
+        var forloopIteration = 0;
 
+        for (forloopIteration; forloopIteration<num;forloopIteration++)
+        {
+
+            addImageToDiv("#for-loop");
+        }
 
 
 
